@@ -1,0 +1,59 @@
+{
+  "name": "template-react",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": "https://github.com/jplusproductions",
+  "description": "A Full Loaded and Structured React.js Project",
+  "repository": "https://github.com/jplusproductions/template-react",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "start": "cross-env SERVER=local PORT=8000 react-app-rewired start",
+    "serve": "cross-env SERVER=local PORT=8000 react-app-rewired start",
+    "serve:dev": "cross-env SERVER=dev PORT=8000 react-app-rewired start",
+    "serve:prod": "cross-env SERVER=prod PORT=8000 react-app-rewired start",
+    "serve:stage": "cross-env SERVER=stage PORT=8000 react-app-rewired start",
+    "build:dev": "cross-env SERVER=dev react-app-rewired build",
+    "build:prod": "cross-env SERVER=prod react-app-rewired build",
+    "build:stage": "cross-env SERVER=stage react-app-rewired build",
+    "lint:fix": "eslint \"**/*.js\" \"**/*.jsx\" --fix",
+    "lint": "eslint \"**/*.js\" \"**/*.jsx\""
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "cross-env": "^6.0.3",
+    "customize-cra": "^0.9.1",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-react": "^7.17.0",
+    "react-app-rewired": "^2.1.5",
+    "webpack": "4.41.5",
+    "webpack-dev-server": "3.10.2"
+  },
+  "config-overrides-path": "react.config.js",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
